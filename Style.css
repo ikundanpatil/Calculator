@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sora", sans-serif;
+  background: #f8f3e5;
+}
+.calculator {
+  width: 410px;
+  background: transparent;
+  border: 3px solid #242b25;
+  border-radius: 20px;
+  box-shadow: 12px 12px 0 #242b25;
+  overflow: hidden;
+  position: relative;
+  top: 20px;
+  font-family: "Sora", sans-serif;
+}
+.calculator-title {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #faf5e8;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  position: relative;
+}
+.calculator-title::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  height: 3px;
+  background: #242b25;
+  width: 100%;
+}
+.display {
+  height: 170px;
+  background: #faf5e8;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Clear {
+  color: #d42518;
+  font-size: 2rem;
+}
+#result {
+  font-size: 62px;
+  font-weight: 600;
+  color: #242424;
+  position: relative;
+  top: 10px;
+}
+#expression {
+  margin-top: 10px;
+  font-size: 19px;
+  color: #333;
+}
+.buttons {
+  padding: 28px 16px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  position: relative;
+  font-family: "Sora", sans-serif;
+}
+.buttons::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #242b25;
+  width: 100%;
+}
+button {
+  height: 78px;
+  border: 3px solid #242b25;
+  border-radius: 50px;
+  background: #faf5e8;
+  color: #242424;
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #242b25;
+  transition: 0.1s;
+}
+button:hover {
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #242b25;
+}
+.result-button {
+  font-size: 32px;
+  background-color: #d42518;
+}
